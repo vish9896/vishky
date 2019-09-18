@@ -1,0 +1,540 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D25D2DCE-1359-478C-B9EC-7DD77564B155}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hostel_Managment_System</RootNamespace>
+    <AssemblyName>Hostel_Managment_System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\css\animate.css" />
+    <Content Include="Admin\css\bootstrap.css" />
+    <Content Include="Admin\css\custom.css" />
+    <Content Include="Admin\css\export.css" />
+    <Content Include="Admin\css\font-awesome.css" />
+    <Content Include="Admin\css\graph.css" />
+    <Content Include="Admin\css\jqcandlestick.css" />
+    <Content Include="Admin\css\monthly.css" />
+    <Content Include="Admin\css\owl.carousel.css" />
+    <Content Include="Admin\css\SidebarNav.min.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\Home.aspx" />
+    <Content Include="Admin\images\1.jpg" />
+    <Content Include="Admin\images\2.jpg" />
+    <Content Include="Admin\images\3.jpg" />
+    <Content Include="Admin\images\4.jpg" />
+    <Content Include="Admin\images\a.png" />
+    <Content Include="Admin\images\i1.png" />
+    <Content Include="Admin\images\i2.png" />
+    <Content Include="Admin\images\i3.png" />
+    <Content Include="Admin\images\i4.png" />
+    <Content Include="Admin\images\img-sprite.png" />
+    <Content Include="Admin\images\img1.png" />
+    <Content Include="Admin\images\lock.png" />
+    <Content Include="Admin\images\mail.png" />
+    <Content Include="Admin\images\search-icon.png" />
+    <Content Include="Admin\images\slider1.jpg" />
+    <Content Include="Admin\images\slider2.jpg" />
+    <Content Include="Admin\images\slider3.jpg" />
+    <Content Include="Admin\images\slider4.jpg" />
+    <Content Include="Admin\images\slider5.jpg" />
+    <Content Include="Admin\images\slider6.jpg" />
+    <Content Include="Admin\images\slider7.jpg" />
+    <Content Include="Admin\images\tick.png" />
+    <Content Include="Admin\images\user.png" />
+    <Content Include="Admin\images\weather.jpg" />
+    <Content Include="Admin\js\amcharts.js" />
+    <Content Include="Admin\js\bootstrap.js" />
+    <Content Include="Admin\js\Chart.bundle.js" />
+    <Content Include="Admin\js\Chart.js" />
+    <Content Include="Admin\js\Chart.min.js" />
+    <Content Include="Admin\js\chartinator.js" />
+    <Content Include="Admin\js\classie.js" />
+    <Content Include="Admin\js\custom.js" />
+    <Content Include="Admin\js\export.min.js" />
+    <Content Include="Admin\js\images\dragIconRoundBig.svg" />
+    <Content Include="Admin\js\images\lens.svg" />
+    <Content Include="Admin\js\index.js" />
+    <Content Include="Admin\js\index1.js" />
+    <Content Include="Admin\js\index2.js" />
+    <Content Include="Admin\js\jquery-1.11.1.min.js" />
+    <Content Include="Admin\js\jquery.flot.js" />
+    <Content Include="Admin\js\jquery.jqcandlestick.min.js" />
+    <Content Include="Admin\js\jquery.nicescroll.js" />
+    <Content Include="Admin\js\light.js" />
+    <Content Include="Admin\js\metisMenu.min.js" />
+    <Content Include="Admin\js\modernizr.custom.js" />
+    <Content Include="Admin\js\monthly.js" />
+    <Content Include="Admin\js\owl.carousel.js" />
+    <Content Include="Admin\js\pie-chart.js" />
+    <Content Include="Admin\js\scripts.js" />
+    <Content Include="Admin\js\serial.js" />
+    <Content Include="Admin\js\SidebarNav.min.js" />
+    <Content Include="Admin\js\SimpleChart.js" />
+    <Content Include="Admin\js\utils.js" />
+    <Content Include="Admin\js\validator.min.js" />
+    <Content Include="Admin\ViewStudent.aspx" />
+    <Content Include="App_Data\Hostel.mdf" />
+    <Content Include="App_Data\Hostel_log.ldf">
+      <DependentUpon>Hostel.mdf</DependentUpon>
+    </Content>
+    <Content Include="User\AboutUs.aspx" />
+    <Content Include="User\BookRoom.aspx" />
+    <Content Include="User\ChangePassword.aspx" />
+    <Content Include="User\css\animate.css" />
+    <Content Include="User\css\bootstrap.css" />
+    <Content Include="User\css\chocolat.css" />
+    <Content Include="User\css\style.css" />
+    <Content Include="User\css\style1.css" />
+    <Content Include="User\Ex\css\main.css" />
+    <Content Include="User\Ex\css\util.css" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="User\Ex\fonts\montserrat\OFL.txt" />
+    <Content Include="User\Ex\images\icons\favicon.ico" />
+    <Content Include="User\Ex\images\img-01.png" />
+    <Content Include="User\Ex\js\main.js" />
+    <Content Include="User\Ex\vendor\animate\animate.css" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="User\Ex\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="User\Ex\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="User\Ex\vendor\bootstrap\js\popper.js" />
+    <Content Include="User\Ex\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="User\Ex\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="User\Ex\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="User\Ex\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="User\Ex\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="User\Ex\vendor\select2\select2.css" />
+    <Content Include="User\Ex\vendor\select2\select2.js" />
+    <Content Include="User\Ex\vendor\select2\select2.min.css" />
+    <Content Include="User\Ex\vendor\select2\select2.min.js" />
+    <Content Include="User\Ex\vendor\tilt\tilt.jquery.min.js" />
+    <Content Include="User\Feedback.aspx" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="User\fp.aspx" />
+    <Content Include="User\Gallery.aspx" />
+    <Content Include="User\Home.aspx" />
+    <Content Include="User\images\1111.jpg" />
+    <Content Include="User\images\lib.jpg" />
+    <Content Include="User\images\a1.jpg" />
+    <Content Include="User\images\ab-bann.jpg" />
+    <Content Include="User\images\arrows.png" />
+    <Content Include="User\images\b1.jpg" />
+    <Content Include="User\images\b2.jpg" />
+    <Content Include="User\images\b2.png" />
+    <Content Include="User\images\b3.jpg" />
+    <Content Include="User\images\b3.png" />
+    <Content Include="User\images\b4.jpg" />
+    <Content Include="User\images\b4.png" />
+    <Content Include="User\images\b5.jpg" />
+    <Content Include="User\images\b6.jpg" />
+    <Content Include="User\images\b7.jpg" />
+    <Content Include="User\images\b8.jpg" />
+    <Content Include="User\images\b9.jpg" />
+    <Content Include="User\images\bann.jpg" />
+    <Content Include="User\images\banner.jpg" />
+    <Content Include="User\images\calendar_icon.png" />
+    <Content Include="User\images\close.png" />
+    <Content Include="User\images\db.jpg" />
+    <Content Include="User\images\email.png" />
+    <Content Include="User\images\ftr-logo.png" />
+    <Content Include="User\images\ftr-social.png" />
+    <Content Include="User\images\gym.jpg" />
+    <Content Include="User\images\keys.png" />
+    <Content Include="User\images\left.png" />
+    <Content Include="User\images\location.png" />
+    <Content Include="User\images\logo.png" />
+    <Content Include="User\images\ph.png" />
+    <Content Include="User\images\quota.png" />
+    <Content Include="User\images\r1.jpg" />
+    <Content Include="User\images\r2.jpg" />
+    <Content Include="User\images\r3.jpg" />
+    <Content Include="User\images\r4.jpg" />
+    <Content Include="User\images\r5.jpg" />
+    <Content Include="User\images\r6.jpg" />
+    <Content Include="User\images\r7.jpg" />
+    <Content Include="User\images\r8.jpg" />
+    <Content Include="User\images\right.png" />
+    <Content Include="User\images\s1.jpg" />
+    <Content Include="User\images\s1.png" />
+    <Content Include="User\images\s10.jpg" />
+    <Content Include="User\images\s10.png" />
+    <Content Include="User\images\s2.jpg" />
+    <Content Include="User\images\s2.png" />
+    <Content Include="User\images\s3.jpg" />
+    <Content Include="User\images\s3.png" />
+    <Content Include="User\images\s4.jpg" />
+    <Content Include="User\images\s4.png" />
+    <Content Include="User\images\s5.png" />
+    <Content Include="User\images\s6.png" />
+    <Content Include="User\images\s61.jpg" />
+    <Content Include="User\images\s62.png" />
+    <Content Include="User\images\s63.png" />
+    <Content Include="User\images\s64.png" />
+    <Content Include="User\images\s7.png" />
+    <Content Include="User\images\s8.png" />
+    <Content Include="User\images\s9.png" />
+    <Content Include="User\images\ser-strip.jpg" />
+    <Content Include="User\images\summer.png" />
+    <Content Include="User\images\t-icn.png" />
+    <Content Include="User\images\t1.jpg" />
+    <Content Include="User\images\t2.jpg" />
+    <Content Include="User\images\t3.jpg" />
+    <Content Include="User\images\t4.jpg" />
+    <Content Include="User\images\top-social.png" />
+    <Content Include="User\js\bootstrap.min.js" />
+    <Content Include="User\js\jquery-1.11.0.min.js" />
+    <Content Include="User\js\jquery.chocolat.js" />
+    <Content Include="User\js\modernizr.js" />
+    <Content Include="User\js\wow.min.js" />
+    <Content Include="User\Login.aspx" />
+    <Content Include="User\MessMenu.aspx" />
+    <Content Include="User\Payment.aspx" />
+    <Content Include="User\Registration.aspx" />
+    <Content Include="User\RequestLeave.aspx" />
+    <Content Include="User\RequestStatus.aspx" />
+    <Content Include="User\UHome.aspx" />
+    <Content Include="User\Visitor%27sRequest.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewStudent.aspx.cs">
+      <DependentUpon>ViewStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewStudent.aspx.designer.cs">
+      <DependentUpon>ViewStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\BookRoom.aspx.cs">
+      <DependentUpon>BookRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\BookRoom.aspx.designer.cs">
+      <DependentUpon>BookRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\fp.aspx.cs">
+      <DependentUpon>fp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\fp.aspx.designer.cs">
+      <DependentUpon>fp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\MessMenu.aspx.cs">
+      <DependentUpon>MessMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\MessMenu.aspx.designer.cs">
+      <DependentUpon>MessMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RequestLeave.aspx.cs">
+      <DependentUpon>RequestLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RequestLeave.aspx.designer.cs">
+      <DependentUpon>RequestLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RequestStatus.aspx.cs">
+      <DependentUpon>RequestStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RequestStatus.aspx.designer.cs">
+      <DependentUpon>RequestStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UHome.aspx.cs">
+      <DependentUpon>UHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UHome.aspx.designer.cs">
+      <DependentUpon>UHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User\Visitor%27sRequest.aspx.cs">
+      <DependentUpon>Visitor%27sRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Visitor%27sRequest.aspx.designer.cs">
+      <DependentUpon>Visitor%27sRequest.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\fonts\FontAwesome.otf" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin\Admin.Master" />
+    <None Include="packages.config" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="User\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="User\User.Master" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="User\Ex\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="User\Ex\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="User\Ex\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="User\Main.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51153</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51153/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
